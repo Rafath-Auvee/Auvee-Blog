@@ -5,9 +5,9 @@ import {schemaTypes} from './schemas'
 
 export default defineConfig({
   name: 'default',
-  title: 'auvee_sanity',
+  title: 'auveesanity',
 
-  projectId: '4tdldkbn',
+  projectId: 'lhkxszlm',
   dataset: 'production',
 
   plugins: [deskTool(), visionTool()],

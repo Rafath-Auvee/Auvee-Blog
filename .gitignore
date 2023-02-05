@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+auveesanity/node_modules
+auveesanity/dist
+
 # testing
 /coverage
 
