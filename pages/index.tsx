@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Header from "./../components/Header";
 import { sanityClient, urlFor } from "../sanity";
-import { Link } from "next/link";
+import Link from "next/link"
 import { Post } from "../typings";
 
 
@@ -47,7 +47,7 @@ function Home({ posts }: Props) {
       {/* post */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 p-5 md:p-6">
         {posts.map((post) => (
-          // <Link key={post._id} to={`/post/${post.slug.current}`}>
+          <Link key={post._id} href={`/post/${post.slug.current}`}>
             <div className="border rounded-lg group cursor-pointer overflow-hidden">
               <img
                 src={urlFor(post.mainImage).url()!}
@@ -68,7 +68,7 @@ function Home({ posts }: Props) {
                 />
               </div>
             </div>
-          // </Link>
+          </Link>
         ))}
       </div>
     </div>
