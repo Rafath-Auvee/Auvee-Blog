@@ -7,7 +7,7 @@ function Header() {
       <div className="flex items-center space-x-5 ">
         <Link href="/">
           <img
-            //src="https://i.ibb.co/0C0BVg4/horizontal-Logo.png"
+            
             className="w-44 object-contain cursor-pointer"
             src="https://i.ibb.co/0C0BVg4/horizontal-Logo.png"
             alt=""
